@@ -41,7 +41,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/1200x/ed/06/74/ed0674868794ddf4b0c8cb217300e321.jpg"
+                src="https://i.pinimg.com/736x/18/3b/c7/183bc7bb24fefa2cecbd09d13ea5a031.jpg"
                 alt="Beauty & Makeup"
               />
             </div>
@@ -61,7 +61,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/736x/4f/ef/41/4fef41975a53b9659a6f35cf3df3438a.jpg"
+                src="https://i.pinimg.com/736x/f2/35/44/f23544b416a4fa3303c20666b7c43b97.jpg"
                 alt="Accessories"
               />
             </div>
@@ -81,7 +81,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/736x/91/d0/31/91d031b0cf47129a6e6300e894c70312.jpg"
+                src="https://i.pinimg.com/1200x/42/c9/de/42c9def3ef73b69ed80712a0fb5c5b91.jpg"
                 alt="Footwear"
               />
             </div>
@@ -101,7 +101,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/736x/23/11/55/231155c4ad7008653c529ecb8ec15c3d.jpg"
+                src="https://i.pinimg.com/736x/d7/0f/4b/d70f4b9b046c8786e10d08a71c45fa99.jpg"
                 alt="Sustainable Fashion"
               />
             </div>
@@ -121,7 +121,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/736x/f7/4f/40/f74f40a42dc37c6ff912ec083a8d4b5a.jpg"
+                src="https://i.pinimg.com/736x/03/47/ca/0347ca827171bd48ccb3ed244302cdc1.jpg"
                 alt="Lifestyle"
               />
             </div>
@@ -141,7 +141,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/736x/9a/7f/09/9a7f09023f54ad0c5971b4f4eaf3ee7f.jpg"
+                src="https://i.pinimg.com/736x/95/9c/08/959c080dc00ad3b534eda9b5d3c9373b.jpg"
                 alt="Street Style"
               />
             </div>
@@ -161,7 +161,7 @@ const Categories = () => {
           <div className="category-card">
             <div className="category-image">
               <img
-                src="https://i.pinimg.com/736x/92/f5/8c/92f58c94a04e62e0f47fd31c918bf127.jpg"
+                src="https://i.pinimg.com/1200x/79/13/a4/7913a4cb5b74effc285a35e6e9a9349c.jpg"
                 alt="Luxury Fashion"
               />
             </div>
