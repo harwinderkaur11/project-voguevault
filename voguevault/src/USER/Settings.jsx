@@ -9,40 +9,47 @@ export default function Settings() {
   return (
     <>
       <style>{`
+        body {
+          margin: 0;
+          font-family: 'Poppins', sans-serif;
+          background: url("https://images.template.net/75381/Free-Pastel-Iphone-Background-01-1.jpg") no-repeat center center fixed;
+          background-size: cover;
+        }
+
         .settings-container {
-          font-family: "Poppins", sans-serif;
-          background-color: #fafafa;
-          min-height: 100vh;
-          padding: 40px 60px;
+          max-width: 900px;
+          margin: 50px auto;
+          background: white;
+          padding: 40px;
+          border-radius: 25px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+          border: 2px solid #ffc0cb;
         }
 
         .settings-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          text-align: center;
           margin-bottom: 30px;
         }
 
         .settings-header h1 {
-          color: #333;
-          font-size: 2rem;
-          font-weight: 600;
+          color: #ff69b4;
+          font-size: 28px;
+          font-weight: 700;
+          margin-bottom: 10px;
         }
 
         .settings-form {
-          background: #fff;
-          border-radius: 12px;
-          padding: 30px;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-          max-width: 600px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
         }
 
         .form-group {
-          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
         }
 
         .form-group label {
-          display: block;
           font-size: 0.95rem;
           font-weight: 500;
           margin-bottom: 8px;
@@ -51,41 +58,43 @@ export default function Settings() {
 
         .form-group input,
         .form-group textarea {
-          width: 100%;
-          padding: 10px 14px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
+          padding: 12px 14px;
+          border: 1px solid #ffd6e0;
+          border-radius: 10px;
           font-size: 0.95rem;
           outline: none;
-          transition: border 0.3s;
+          transition: 0.3s;
+          background-color: #fff9fb;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
-          border-color: #ff4081;
+          border-color: #ff69b4;
+          box-shadow: 0 0 5px rgba(255,105,180,0.4);
         }
 
         .switch-group {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background: #f9f9f9;
-          padding: 12px 16px;
-          border-radius: 8px;
-          margin-bottom: 15px;
+          background: #fff9fb;
+          padding: 14px 18px;
+          border-radius: 14px;
+          border: 1px solid #ffd6e0;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         .switch-label {
-          font-size: 0.95rem;
-          color: #444;
+          font-size: 1rem;
           font-weight: 500;
+          color: #555;
         }
 
         .switch {
           position: relative;
           display: inline-block;
-          width: 45px;
-          height: 24px;
+          width: 50px;
+          height: 26px;
         }
 
         .switch input {
@@ -103,14 +112,14 @@ export default function Settings() {
           bottom: 0;
           background-color: #ccc;
           transition: 0.4s;
-          border-radius: 24px;
+          border-radius: 34px;
         }
 
         .slider:before {
           position: absolute;
           content: "";
-          height: 18px;
-          width: 18px;
+          height: 20px;
+          width: 20px;
           left: 3px;
           bottom: 3px;
           background-color: white;
@@ -119,39 +128,44 @@ export default function Settings() {
         }
 
         input:checked + .slider {
-          background-color: #ff4081;
+          background-color: #ff69b4;
         }
 
         input:checked + .slider:before {
-          transform: translateX(21px);
+          transform: translateX(24px);
         }
 
         .save-btn {
-          background-color: #ff4081;
-          color: #fff;
+          background-color: #ff69b4;
+          color: white;
           border: none;
-          padding: 10px 20px;
-          border-radius: 6px;
-          font-size: 0.95rem;
-          font-weight: 500;
+          padding: 12px 25px;
+          border-radius: 25px;
+          font-size: 1rem;
+          font-weight: 600;
           cursor: pointer;
-          transition: 0.3s;
+          transition: background 0.3s, transform 0.2s;
+          display: block;
+          margin: 30px auto 0;
         }
 
         .save-btn:hover {
-          background-color: #e73370;
+          background-color: #ff85c1;
+          transform: translateY(-2px);
         }
       `}</style>
 
       <div className="settings-container">
         <div className="settings-header">
-          <h1>Settings</h1>
-          <button className="save-btn">Save Changes</button>
+          <h1>⚙️ Account Settings</h1>
+          <p style={{ color: "#888", fontSize: "0.95rem" }}>
+            Customize your Vogue Vault profile and preferences 💅
+          </p>
         </div>
 
         <form className="settings-form">
           <div className="form-group">
-            <label>Username</label>
+            <label>👤 Username</label>
             <input
               type="text"
               value={username}
@@ -160,7 +174,7 @@ export default function Settings() {
           </div>
 
           <div className="form-group">
-            <label>Bio</label>
+            <label>📝 Bio</label>
             <textarea
               rows="3"
               value={bio}
@@ -169,7 +183,7 @@ export default function Settings() {
           </div>
 
           <div className="switch-group">
-            <span className="switch-label">Dark Mode</span>
+            <span className="switch-label">🌙 Dark Mode</span>
             <label className="switch">
               <input
                 type="checkbox"
@@ -181,7 +195,7 @@ export default function Settings() {
           </div>
 
           <div className="switch-group">
-            <span className="switch-label">Email Notifications</span>
+            <span className="switch-label">📩 Email Notifications</span>
             <label className="switch">
               <input
                 type="checkbox"
@@ -191,6 +205,10 @@ export default function Settings() {
               <span className="slider"></span>
             </label>
           </div>
+
+          <button type="button" className="save-btn">
+            💾 Save Changes
+          </button>
         </form>
       </div>
     </>
