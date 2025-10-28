@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import About from "./pages/About";
 import "./styles/styles.css";
+
 export default function App() {
   return (
     <>
@@ -14,6 +15,10 @@ export default function App() {
             <li><a href="/">Home</a></li>
             <li><a href="/categories">Categories</a></li>
             <li><a href="/about">About</a></li>
+
+
+
+
           </ul>
         </nav>
       </header>
@@ -24,6 +29,7 @@ export default function App() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/about" element={<About />} />
       </Routes>
+
 
       {/* Footer visible on all pages */}
      <footer className="footer">
@@ -38,12 +44,10 @@ export default function App() {
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733590.png" alt="Pinterest" /></a>
           </div>
-
           <p className="copyright">
             &copy; 2025 Vogue Vault | All Rights Reserved
           </p>
-        </div>
-      </footer>
-    </>
-  );
-}
+          </div>
+          </footer>
+          </>
+  )}
