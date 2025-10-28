@@ -84,7 +84,7 @@ export default function Dashboard() {
         }
       `}</style>
 
-      <header>✨ Vogue Vault ✨</header>
+      {/* <header>✨ Vogue Vault ✨</header> */}
       <div className="dashboard">
         <div className="welcome">
           <h2>Welcome, Harshita!</h2>
@@ -115,7 +115,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <footer>© 2025 Vogue Vault | Designed with 💖 for fashion lovers</footer>
+      {/* <footer>© 2025 Vogue Vault | Designed with 💖 for fashion lovers</footer> */}
     </>
   );
 }

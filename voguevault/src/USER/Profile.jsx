@@ -85,7 +85,7 @@ export default function Profile() {
         }
       `}</style>
 
-      <header>👩 Your Vogue Vault Profile</header>
+      {/* <header>👩 Your Vogue Vault Profile</header> */}
 
       <div className="profile-container">
         <div className="profile-header">
@@ -119,7 +119,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <footer>© 2025 Vogue Vault | Designed with 💖 for fashion lovers</footer>
+      {/* <footer>© 2025 Vogue Vault | Designed with 💖 for fashion lovers</footer> */}
     </>
   );
 }

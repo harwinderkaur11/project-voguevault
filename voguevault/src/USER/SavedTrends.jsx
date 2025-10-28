@@ -100,7 +100,7 @@ export default function SavedTrends() {
         }
       `}</style>
 
-      <header>💾 Saved Trends</header>
+      {/* <header>💾 Saved Trends</header> */}
 
       <div className="container">
         <h2>Your Bookmarked Fashion Trends</h2>
@@ -116,7 +116,7 @@ export default function SavedTrends() {
         ))}
       </div>
 
-      <footer>© 2025 Vogue Vault | Saved Trends</footer>
+      {/* <footer>© 2025 Vogue Vault | Saved Trends</footer> */}
     </>
   );
 }
