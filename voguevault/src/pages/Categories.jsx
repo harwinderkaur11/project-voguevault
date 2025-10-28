@@ -1,34 +1,20 @@
 import React from "react";
-import "./Categories.css";
-import { Link } from "react-router-dom";
+import "../styles/Categories.css"; // Optional if you move CSS to external file
 
-function Categories() {
+const Categories = () => {
   return (
     <>
-      {/* Header */}
-      <header className="header">
-        <div className="nav-container">
-          <Link to="/" className="brand">VOGUE VAULT</Link>
-          <nav>
-            <ul className="nav-menu">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              {/* <li><Link to="/contact">Contact</Link></li> */}
-            </ul>
-          </nav>
-        </div>
-      </header>
-
       {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Discover Fashion Categories</h1>
-          <p>
-            Explore curated collections of the latest trends, beauty secrets,
-            and style inspiration across all fashion categories
-          </p>
-        </div>
-      </section>
+      <section className="hero-categories">
+  <div className="hero-content">
+    <h1>Discover Fashion Categories</h1>
+    <p>
+      Explore curated collections of the latest trends, beauty secrets,
+      and style inspiration across all fashion categories.
+    </p>
+  </div>
+</section>
+
 
       {/* Categories Section */}
       <section className="categories-section">
@@ -41,7 +27,6 @@ function Categories() {
         </div>
 
         <div className="categories-grid">
-          {/* Repeat structure for each category */}
           <div className="category-card">
             <div className="category-image">
               <img src="https://i.pinimg.com/1200x/e1/fb/a4/e1fba46c56a1679977a0d3e63cd3459b.jpg" alt="Fashion Trends" />
@@ -49,12 +34,12 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Fashion Trends</h3>
               <p className="category-description">
-                Stay ahead with the latest runway trends, seasonal must-haves,
-                and style predictions that define contemporary fashion.
+                Stay ahead with the latest runway trends, seasonal must-haves, and
+                style predictions that define contemporary fashion.
               </p>
               <div className="category-stats">
                 <span className="article-count">150+ Articles</span>
-                <Link to="/blog1" className="category-tag">Trending</Link>
+                <a href="blog1.html" className="category-tag">Trending</a>
               </div>
             </div>
           </div>
@@ -66,8 +51,8 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Beauty & Makeup</h3>
               <p className="category-description">
-                From skincare routines to makeup tutorials, discover beauty
-                secrets and techniques for every occasion.
+                From skincare routines to makeup tutorials, discover beauty secrets
+                and techniques for every occasion.
               </p>
               <div className="category-stats">
                 <span className="article-count">120+ Articles</span>
@@ -100,8 +85,8 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Footwear</h3>
               <p className="category-description">
-                Step into style with the latest shoe trends, from comfortable
-                sneakers to elegant heels.
+                Step into style with the latest shoe trends, from comfortable sneakers
+                to elegant heels.
               </p>
               <div className="category-stats">
                 <span className="article-count">95+ Articles</span>
@@ -117,8 +102,8 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Sustainable Fashion</h3>
               <p className="category-description">
-                Eco-friendly fashion choices, ethical brands, and sustainable
-                style practices for conscious consumers.
+                Eco-friendly fashion choices, ethical brands, and sustainable style
+                practices for conscious consumers.
               </p>
               <div className="category-stats">
                 <span className="article-count">60+ Articles</span>
@@ -134,8 +119,8 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Lifestyle</h3>
               <p className="category-description">
-                Fashion meets lifestyle with tips on wellness, travel style, and
-                living your best fashionable life.
+                Fashion meets lifestyle with tips on wellness, travel style, and living
+                your best fashionable life.
               </p>
               <div className="category-stats">
                 <span className="article-count">110+ Articles</span>
@@ -151,8 +136,8 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Street Style</h3>
               <p className="category-description">
-                Discover urban fashion trends, streetwear inspiration, and how
-                to master casual chic looks.
+                Discover urban fashion trends, streetwear inspiration, and how to
+                master casual chic looks.
               </p>
               <div className="category-stats">
                 <span className="article-count">85+ Articles</span>
@@ -168,8 +153,8 @@ function Categories() {
             <div className="category-content">
               <h3 className="category-title">Luxury Fashion</h3>
               <p className="category-description">
-                Explore high-end designer collections, luxury brands, and
-                sophisticated style for special occasions.
+                Explore high-end designer collections, luxury brands, and sophisticated
+                style for special occasions.
               </p>
               <div className="category-stats">
                 <span className="article-count">75+ Articles</span>
@@ -180,7 +165,7 @@ function Categories() {
         </div>
       </section>
 
-      {/* Featured Section */}
+      {/* Featured Articles Section */}
       <section className="featured-section">
         <div className="featured-container">
           <div className="section-header">
@@ -193,19 +178,20 @@ function Categories() {
           <div className="featured-grid">
             <div className="featured-card">
               <div className="featured-image">
-                <img src="https://i.pinimg.com/736x/c4/c4/b2/c4c4b2a98dcf3e94c0f4325c47c9252f.jpg" alt="Spring Trends" />
+                <img src="https://i.pinimg.com/736x/c4/c4/b2/c4c4b2a98dcf3e94c0f4325c47c9252f.jpg" alt="Spring 2024" />
               </div>
               <div className="featured-content">
                 <h3 className="featured-title">Spring 2024 Fashion Trends</h3>
                 <p className="featured-excerpt">
-                  Discover the hottest trends that will dominate the fashion scene this spring season.
+                  Discover the hottest trends that will dominate the fashion scene this
+                  spring season.
                 </p>
               </div>
             </div>
 
             <div className="featured-card">
               <div className="featured-image">
-                <img src="https://i.pinimg.com/736x/3c/35/3e/3c353e704e32c25d9c165fbbda7d27c4.jpg" alt="Sustainable Fashion" />
+                <img src="https://i.pinimg.com/736x/3c/35/3e/3c353e704e32c25d9c165fbbda7d27c4.jpg" alt="Sustainable Fashion Guide" />
               </div>
               <div className="featured-content">
                 <h3 className="featured-title">Sustainable Fashion Guide</h3>
@@ -229,50 +215,8 @@ function Categories() {
           </div>
         </div>
       </section>
-
-      {/* Newsletter Section */}
-      <section className="newsletter-section">
-        <div className="newsletter-content">
-          <h2 className="newsletter-title">Stay Updated</h2>
-          <p className="newsletter-description">
-            Subscribe to our newsletter for the latest fashion trends, beauty
-            tips, and exclusive content delivered to your inbox.
-          </p>
-          <form className="newsletter-form">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="newsletter-input"
-              required
-            />
-            <button type="submit" className="newsletter-button">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-container">
-          <h2 className="footer-brand">Vogue Vault</h2>
-          <p className="footer-tagline">
-            Your stylish destination for fashion, beauty & lifestyle trends.
-          </p>
-
-          <div className="social-icons">
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733590.png" alt="Pinterest" /></a>
-          </div>
-
-          <p className="copyright">
-            &copy; 2025 Vogue Vault | All Rights Reserved
-          </p>
-        </div>
-      </footer>
     </>
   );
-}
+};
 
 export default Categories;
