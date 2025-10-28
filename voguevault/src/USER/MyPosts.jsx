@@ -110,7 +110,7 @@ export default function MyPosts() {
         }
       `}</style>
 
-      <header>📝 My Posts</header>
+      {/* <header>📝 My Posts</header> */}
 
       <div className="posts-container">
         <h2>Your Blog Posts</h2>
@@ -151,7 +151,7 @@ export default function MyPosts() {
         </div>
       </div>
 
-      <footer>© 2025 Vogue Vault | Designed with 💖 for fashion lovers</footer>
+      {/* <footer>© 2025 Vogue Vault | Designed with 💖 for fashion lovers</footer> */}
     </>
   );
 }
