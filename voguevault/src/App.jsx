@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./styles/styles.css";
@@ -8,13 +9,22 @@ import MyPosts from "./USER/MyPosts.jsx";
 import SavedTrends from "./USER/SavedTrends.jsx";
 import Settings from "./USER/Settings.jsx";
 
+=======
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Categories from "./pages/Categories";
+import About from "./pages/About";
+import "./styles/styles.css";
+>>>>>>> c8a52dd4db342d4eeea255a304ebfe7442204c09
 export default function App() {
   return (
     <>
+      {/* Header visible on all pages */}
       <header>
         <h1>Vogue Vault</h1>
         <nav>
           <ul>
+<<<<<<< HEAD
             {/* 👇 use Link for internal navigation */}
             <li><Link to="/">Home</Link></li>
             <li><a href="single_blog.html">Blogs</a></li>
@@ -25,10 +35,16 @@ export default function App() {
             <li><Link to="/login">Login</Link></li>
             <li><Link to="/dashboard">Profile</Link></li>
             <li><a href="contact.html">Contact</a></li>
+=======
+            <li><a href="/">Home</a></li>
+            <li><a href="/categories">Categories</a></li>
+            <li><a href="/about">About</a></li>
+>>>>>>> c8a52dd4db342d4eeea255a304ebfe7442204c09
           </ul>
         </nav>
       </header>
 
+<<<<<<< HEAD
       <Routes>
         {/* Homepage Route */}
         <Route
@@ -158,6 +174,34 @@ export default function App() {
         <Route path="/savedtrends" element={<SavedTrends />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
+=======
+      {/* Page content changes dynamically */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+      {/* Footer visible on all pages */}
+     <footer className="footer">
+        <div className="footer-container">
+          <h2 className="footer-brand">Vogue Vault</h2>
+          <p className="footer-tagline">
+            Your stylish destination for fashion, beauty & lifestyle trends.
+          </p>
+
+          <div className="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733590.png" alt="Pinterest" /></a>
+          </div>
+
+          <p className="copyright">
+            &copy; 2025 Vogue Vault | All Rights Reserved
+          </p>
+        </div>
+      </footer>
+>>>>>>> c8a52dd4db342d4eeea255a304ebfe7442204c09
     </>
   );
 }
