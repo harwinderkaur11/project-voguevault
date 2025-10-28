@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Categories.css"; // Optional if you have separate CSS file
 
 const Categories = () => {
@@ -18,25 +19,30 @@ const Categories = () => {
       {/* Categories Section */}
       <section className="categories-section">
         <div className="categories-grid">
-          <div className="category-card">
-            <div className="category-image">
-              <img
-                src="https://i.pinimg.com/1200x/e1/fb/a4/e1fba46c56a1679977a0d3e63cd3459b.jpg"
-                alt="Fashion Trends"
-              />
-            </div>
-            <div className="category-content">
-              <h3 className="category-title">Fashion Trends</h3>
-              <p className="category-description">
-                Stay ahead with the latest runway trends, seasonal must-haves, and
-                style predictions that define contemporary fashion.
-              </p>
-              <div className="category-stats">
-                <span className="article-count">150+ Articles</span>
-                <a href="#" className="category-tag">Trending</a>
-              </div>
-            </div>
-          </div>
+         
+
+<div className="category-card">
+  <div className="category-image">
+    <img
+      src="https://i.pinimg.com/1200x/a1/c2/22/a1c22235209bb61a87ba9ab401e261dc.jpg"
+      alt="Fashion Trends"
+    />
+  </div>
+  <div className="category-content">
+    <h3 className="category-title">Fashion Trends</h3>
+    <p className="category-description">
+      Stay ahead with the latest runway trends, seasonal must-haves, and
+      style predictions that define contemporary fashion.
+    </p>
+    <div className="category-stats">
+      <span className="article-count">150+ Articles</span>
+      <Link to="/fashion-trends-2025" className="category-tag">
+        Trending
+      </Link>
+    </div>
+  </div>
+</div>
+
 
           <div className="category-card">
             <div className="category-image">
