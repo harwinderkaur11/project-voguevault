@@ -13,7 +13,7 @@ export default function WardrobeGoals() {
         </p>
 
         <img
-          src="https://tse1.explicit.bing.net/th/id/OIP._5Vw6Gig69tYYoBYhseiVwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+          src="https://i.pinimg.com/736x/18/0c/61/180c610117932c3947b7adfeff48be21.jpg"
           alt="Wardrobe Goals"
           style={styles.image}
         />
