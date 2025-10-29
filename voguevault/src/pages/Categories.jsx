@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import "../styles/Categories.css";
 
 const Categories = () => {
-  // Use hooks to manage categories and featured articles
+ 
   const [categories, setCategories] = useState([]);
   const [featuredArticles, setFeaturedArticles] = useState([]);
 
   useEffect(() => {
-    // Simulated data (can be replaced with API later)
     const categoryData = [
       {
         title: "Fashion Trends",
