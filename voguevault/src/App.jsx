@@ -1,16 +1,18 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import "./styles/styles.css";
 
 // 🏠 Main Pages
+import SearchBar from './pages/SearchBar';
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import About from "./pages/About";
 
+
 // 💅 Subpages
 import WardrobeGoals from "./subpages/WardrobeGoals.jsx";
 import TrendyHairstyles from "./subpages/TrendyHairstyles.jsx";
-import BeautyAndSkincare from "./subpages/BeautyAndSKinCare.jsx"; // ✅ fixed capitalization
+import BeautyAndSkincare from "./subpages/BeautyAndSKinCare.jsx";
 
 // 👤 User Pages
 import LoginPage from "./LoginPage.jsx";
@@ -20,16 +22,28 @@ import MyPosts from "./USER/MyPosts.jsx";
 import SavedTrends from "./USER/SavedTrends.jsx";
 import Settings from "./USER/Settings.jsx";
 
-
-
 export default function App() {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* 🌟 Header visible on all pages */}
       <header className="header">
         <h1 className="logo">Vogue Vault</h1>
+
         <nav>
           <ul className="nav-links">
+
+            {/* 🔍 Search Icon */}
+            <li 
+              className="search-icon"
+              onClick={() => navigate("/search")}
+              title="Search"
+            >
+              <i className="fa fa-search"></i>
+            </li>
+
+            {/* Other Navbar Links */}
             <li><Link to="/">Home</Link></li>
             <li><Link to="/categories">Categories</Link></li>
             <li><Link to="/about">About</Link></li>
@@ -46,13 +60,12 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/about" element={<About />} />
+          <Route path="/search" element={<SearchPage />} />
 
           {/* Subpages */}
           <Route path="/wardrobe-goals" element={<WardrobeGoals />} />
           <Route path="/trendy-hairstyles" element={<TrendyHairstyles />} />
           <Route path="/beauty-and-skincare" element={<BeautyAndSkincare />} />
-
-          
 
           {/* User Pages */}
           <Route path="/login" element={<LoginPage />} />
@@ -74,22 +87,13 @@ export default function App() {
 
           <div className="social-icons">
             <a href="#" aria-label="Instagram">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
-                alt="Instagram"
-              />
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
             </a>
             <a href="#" aria-label="Twitter">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-                alt="Twitter"
-              />
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
             </a>
             <a href="#" aria-label="Pinterest">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/733/733590.png"
-                alt="Pinterest"
-              />
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733590.png" alt="Pinterest" />
             </a>
           </div>
 

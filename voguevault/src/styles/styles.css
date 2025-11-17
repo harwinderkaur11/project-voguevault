@@ -239,3 +239,16 @@
   transform: scale(1.2);
 }
 
+/* Search Icon Styling */
+.search-icon {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 6px 12px;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #ff7fa8;
+  transform: scale(1.15);
+}
